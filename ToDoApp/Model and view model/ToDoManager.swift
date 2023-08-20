@@ -14,9 +14,11 @@ class TodoManager: ObservableObject {
             save()
         }
     }
-        
     init() {
         load()
+    }
+    func loadSampleData(){
+        todos = Todo.sampleTodos
     }
     
     func getArchiveURL() -> URL {
